@@ -7,7 +7,11 @@
           - main # Or your default branch name
 
     jobs:
+      
+        
       build-and-deploy:
+        environment:
+          name: github-pages
         runs-on: ubuntu-latest
         permissions:
           contents: write
